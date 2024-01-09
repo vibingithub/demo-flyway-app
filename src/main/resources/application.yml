@@ -1,0 +1,19 @@
+server:
+  port: 7100
+  
+spring:
+  application:
+    name: demo-flyway-app
+  
+  datasource:
+    url: jdbc:postgresql://localhost:5432/demo-flyway-jpa
+    username: app_user
+    password: app_user
+    hikari:
+      schema: app-data
+  
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+
